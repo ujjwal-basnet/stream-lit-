@@ -23,7 +23,7 @@ def main():
     st.title("also")
     st.write(dir(print))
     
-    #display dataframe 
+    #Display DataFrame 
     cancer_ = datasets.load_breast_cancer()
     df_cancer = pd.DataFrame(cancer_.data , columns =cancer_.feature_names)
     st.write(df_cancer.head())
