@@ -15,8 +15,10 @@ def main() :
     
     st.header("print from last" )
     st.dataframe(df.tail()) # or st.write(df.tail())
+    
+    st.dataframe(df.iloc[:5 , :-1])
 if __name__ == '__main__':
-    main()
+ main()
     
     
 
