@@ -52,5 +52,7 @@ with st.expander("Ujjwal"):
     
 st.bar_chart({'data' : [1 , 2 , 4 ,5 ]})
 with st.expander("Know more"):
-    st.write("This is a bar cart created using streamlit code ")
+    st.write("This is a bar cart created using S-treamlit  code ")
     st.code("st.bar_cart({'data' : [1 , 2 ,4 ,5]})" , language= 'python')
+    
+    
