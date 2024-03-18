@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 
 # Load pickled model
-model = pickle.load(open('random-forest-ujjwal.pkl', 'rb'))
+model = pickle.load(open('car-prediction-streamlit/random-forest-ujjwal.pkl', 'rb'))
 
 # Predict value given by the user
 def pred_price(Present_Price, Kms_Driven, Fuel_Type, Seller_Type, Transmission, Owner, no_year):
