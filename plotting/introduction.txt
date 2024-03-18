@@ -1,0 +1,12 @@
+Streamlit give you various plotting options some are
+
+In case for plottting matplotlib  -> sy.pyplot 
+ 
+Altiar -> st.altai , default one
+
+
+plotly  -> st.plotly_chart
+
+bokeh -> st.bokeh_chart()
+
+and more
