@@ -16,6 +16,7 @@ import numpy as np
 import matplotlib 
 matplotlib.use('AGG') #fintype png , raster-graphics : hight quality images using Anti Grain Geomerty Engine 
 import matplotlib.pyplot as plt 
+import seaborn as sns 
 
 def main():
     st.title("plotting with st.pyploy")
@@ -25,6 +26,7 @@ def main():
     st.dataframe(df.head())
     
     #plotting 
+    st.subheader('Method One')
     fig , ax   = plt.subplots() 
     x = np.random.random(150)
     y = np.random.random(150)
@@ -37,5 +39,21 @@ def main():
     df['variety'].value_counts().plot(kind = 'bar')
     st.pyplot(fig2)
     
+    
+    #more
+    st.subheader('More -method 2')
+    fig3 = plt.figure()
+    plt.scatter(df['variety'] ,df['petal.width']) 
+    st.pyplot(fig3)
+    
+    
+    # for seaborn 
+    st.subheader('Header')
+    fig4 = plt.figure()
+    sns.countplot(x = df['variety'] , stat='percent' , hue=df['sepal.width'])
+    st.pyplot(fig4)
+    
+    #this hue = df['sepal.width'] runs but give some warning 
+
 if __name__ == '__main__':
     main()
